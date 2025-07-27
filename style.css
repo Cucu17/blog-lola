@@ -12,7 +12,6 @@ body {
 header {
     background-color: #ff9b8f;
     color: white;
-    padding: 2rem 2rem;
     width: 100% ;
     position: sticky;
     top: 0;
@@ -37,14 +36,14 @@ header h1 {
     padding: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    min-height: 100vh;
+}
+
     /* align-content: center; */
     /* flex-direction: row; */
     /* flex-direction: row-reverse; */
-    justify-content: center;
-    gap: 1rem;
-    height: 100vh;
-}
-
 
 section article {
     transition: box-shadow 0.3s ease; /*box-shadow - all*/
@@ -111,4 +110,30 @@ footer a {
 
 footer a:hover {
     color: purple;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .container {
+        flex-wrap: wrap;
+    }
+    article {
+        width: 300px;
+    }
+
+    footer {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        flex-wrap: wrap;
+    }
 }
