@@ -12,7 +12,11 @@ body {
 header {
     background-color: #ff9b8f;
     color: white;
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
+}
+
+header nav img {
+    width: 100px;
 }
 
 header h1 {
